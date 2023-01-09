@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  line-height: 1;
+
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.card {
+  max-width: 420px;
+  border-radius: 11px;
+  background-color: #fff;
+  box-shadow: 0 8px 2px 2px hsl(225, 100%, 94%);
+  overflow: hidden;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding: 48px 48px;
+  text-align: center;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+}
+
+.card-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.card-description {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.5;
+  letter-spacing: 0.45px;
+}
+
+.price-plan {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 24px;
+  border-radius: 11px;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.plan-img {
+  width: 40px;
+  height: 40px;
+}
+
+.plan-content {
+  text-align: left;
+}
+
+.plan-title {
+  margin-bottom: 8px;
+  color: hsl(223, 47%, 23%);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.plan-detail {
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+}
+
+.plan-link {
+  margin-left: auto;
+  font-size: 15px;
+  transition: all 0.3s;
+}
+
+.plan-link:link,
+.plan-link:visited {
+  color: hsl(245, 75%, 52%);
+}
+
+.plan-link:hover,
+.plan-link:active {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 11px;
+  padding: 14px 0;
+  font-weight: 900;
+  background: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-proceed {
+  color: #fff;
+  box-shadow: 0 8px 10px 4px hsl(225, 100%, 94%);
+  background-color: hsl(245, 75%, 52%);
+}
+
+.btn-proceed:hover {
+  opacity: 0.7;
+}
+
+.btn-cancel {
+  color: hsl(224, 23%, 55%);
+}
+
+.btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  margin-top: 12px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  body {
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 92%;
+  }
+}
